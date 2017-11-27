@@ -1,0 +1,23 @@
+<div class="eventsadd-container">
+    <mat-form-field>
+            <mat-select matInput name="mySelect">
+        
+        
+          <mat-option value="option">Sport</mat-option>
+          <mat-option value="option">Music</mat-option>
+          <mat-option value="option">Media</mat-option>
+          
+        </mat-select>
+      </mat-form-field>
+
+    <mat-form-field>
+          <textarea matInput placeholder="Event title"></textarea>
+        </mat-form-field>
+
+    <mat-form-field>
+     <owl-date-time [(ngModel)]="moment" ></owl-date-time>
+    </mat-form-field>
+     
+    
+  
+</div>

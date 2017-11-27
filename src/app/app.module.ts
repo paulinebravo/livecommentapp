@@ -6,13 +6,22 @@ import { AppComponent } from './app.component';
 import { EventscatalogComponent } from './eventscatalog/eventscatalog.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, MatFormFieldModule } from '@angular/material';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { EventsaddComponent } from './eventsadd/eventsadd.component';
+
+import { DateTimePickerModule } from 'ng-pick-datetime';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventscatalogComponent
+    EventscatalogComponent,
+    EventsaddComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +30,14 @@ import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIco
     MatMenuModule,
     MatCardModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    DateTimePickerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    FormsModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
