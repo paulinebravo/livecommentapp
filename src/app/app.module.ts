@@ -14,6 +14,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EventsaddComponent } from './eventsadd/eventsadd.component';
 
 import { DateTimePickerModule } from 'ng-pick-datetime';
+import { PostcommentComponent } from './postcomment/postcomment.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 
@@ -21,7 +23,8 @@ import { DateTimePickerModule } from 'ng-pick-datetime';
   declarations: [
     AppComponent,
     EventscatalogComponent,
-    EventsaddComponent
+    EventsaddComponent,
+    PostcommentComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ import { DateTimePickerModule } from 'ng-pick-datetime';
     MatInputModule,
     MatSelectModule,
     FormsModule,
+    AppRoutingModule,
 
 
   ],
