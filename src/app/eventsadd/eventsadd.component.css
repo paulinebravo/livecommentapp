@@ -1,0 +1,8 @@
+.eventsadd-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .eventsadd-container > * {
+    width: 100%;
+  }
