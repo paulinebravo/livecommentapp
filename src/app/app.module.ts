@@ -6,9 +6,8 @@ import { AppComponent } from './app.component';
 import { EventscatalogComponent } from './eventscatalog/eventscatalog.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCardModule, MatMenuModule, MatToolbarModule, MatIconModule, MatFormFieldModule } from '@angular/material';
-import {MatInputModule} from '@angular/material/input';
-import {MatSelectModule} from '@angular/material/select';
+import {MaterialModule} from './material.module';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { EventsaddComponent } from './eventsadd/eventsadd.component';
@@ -29,17 +28,20 @@ import { AppRoutingModule } from './/app-routing.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatMenuModule,
-    MatCardModule,
-    MatToolbarModule,
-    MatIconModule,
     DateTimePickerModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatSelectModule,
     FormsModule,
     AppRoutingModule,
+    MaterialModule,
+
+  ],
+
+  exports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    DateTimePickerModule,
+    FormsModule,
+    AppRoutingModule,
+
 
 
   ],
