@@ -3,6 +3,8 @@ import {CommonModule} from '@angular/common';
 
 import { MatButtonModule, MatCardModule, MatToolbarModule, MatFormFieldModule, MatInputModule, MatSelectModule} from '@angular/material';
 
+import { MatDatepickerModule, MatNativeDateModule } from '@angular/material';
+
 
 
 @NgModule ({
@@ -13,7 +15,8 @@ import { MatButtonModule, MatCardModule, MatToolbarModule, MatFormFieldModule, M
         MatFormFieldModule,
         MatInputModule,
         MatSelectModule,
-
+        MatDatepickerModule,
+        MatNativeDateModule
       ],
 
       exports: [
@@ -23,8 +26,8 @@ import { MatButtonModule, MatCardModule, MatToolbarModule, MatFormFieldModule, M
         MatFormFieldModule,
         MatInputModule,
         MatSelectModule,
-
-
+        MatDatepickerModule,
+        MatNativeDateModule
       ],
 })
 

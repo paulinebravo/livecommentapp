@@ -1,24 +1,25 @@
-<div class="eventsadd-container">
+<form class="eventsadd-form">
     
-           
-    <mat-select placeholder="Select">
-        
-        
+  <mat-form-field>
+    <mat-select placeholder="Select a category">      
           <mat-option value="option">Sport</mat-option>
           <mat-option value="option">Music</mat-option>
-          <mat-option value="option">Media</mat-option>
-          
+          <mat-option value="option">Media</mat-option>       
         </mat-select>
-      
+      </mat-form-field>  
 
-    
+    <mat-form-field>  
           <textarea matInput placeholder="Event title"></textarea>
+        </mat-form-field>    
+       
         
-
-    
-     <owl-date-time [(ngModel)]="moment" ></owl-date-time>
-    
-     
-    <form><button mat-button>ADD AN EVENT</button></form>
+        <mat-form-field>
+          <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>     
+        
+   
+    <button mat-button>ADD AN EVENT</button>
   
-</div> 
+      </form>
