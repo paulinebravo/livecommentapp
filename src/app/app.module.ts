@@ -15,6 +15,8 @@ import { EventsaddComponent } from './eventsadd/eventsadd.component';
 import { DateTimePickerModule } from 'ng-pick-datetime';
 import { PostcommentComponent } from './postcomment/postcomment.component';
 import { AppRoutingModule } from './/app-routing.module';
+import {HttpModule} from '@angular/http';
+
 
 
 
@@ -32,6 +34,8 @@ import { AppRoutingModule } from './/app-routing.module';
     FormsModule,
     AppRoutingModule,
     MaterialModule,
+    ReactiveFormsModule,
+    HttpModule,
 
   ],
 
@@ -41,6 +45,8 @@ import { AppRoutingModule } from './/app-routing.module';
     DateTimePickerModule,
     FormsModule,
     AppRoutingModule,
+    ReactiveFormsModule,
+    HttpModule,
 
 
 
