@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { EventscatalogComponent } from './eventscatalog/eventscatalog.component';
+import {PostmessagesComponent} from './postmessages/postmessages.component';
 
 const routes: Routes = [
-  { path: 'eventscatalog', component: EventscatalogComponent }
+  { path: ' ', component: EventscatalogComponent },
+  { path: 'postmessages', component: PostmessagesComponent },
 ];
 
 @NgModule({
