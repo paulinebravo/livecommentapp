@@ -8,7 +8,9 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class PostmessagesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) {
+    this.route.params.subscribe(res => console.log(res.id));
+  }
 
   ngOnInit() {
   }

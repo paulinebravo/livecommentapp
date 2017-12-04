@@ -1,3 +1,8 @@
-<p>
-  eventscatalogtag works!
-</p>
+<h2>{{ event.name }} Details</h2>
+<div><span>id: </span>{{event.id}}</div>
+<div><span>name: </span>{{event.name}}</div>
+<div>
+  <label>name:
+    <input [(ngModel)]="event.name" placeholder="name">
+  </label>
+</div>
