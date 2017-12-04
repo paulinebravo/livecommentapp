@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Event} from '../event';
-import {EVENT} from '../mock-event';
+import {EVENTS} from '../mock-event';
 
 @Component({
   selector: 'app-eventscatalogtag',
@@ -8,15 +8,16 @@ import {EVENT} from '../mock-event';
   styleUrls: ['./eventscatalogtag.component.css']
 })
 export class EventscatalogtagComponent implements OnInit {
-  hero: Event = {
-    id: 1,
-    name: 'Football match'
-  };
-  event = EVENT;
+  events = EVENTS;
 
-  constructor() { }
+   selectedEvent: Event;
 
-  ngOnInit() {
-  }
 
-}
+   constructor() { }
+
+   ngOnInit() {
+   }
+   onSelect(event: Event): void {
+     this.selectedEvent = event;
+   }
+ }
