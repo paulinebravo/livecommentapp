@@ -3,18 +3,17 @@
   <li *ngFor="let event of events"
     [class.selected]="event === selectedEvent"
     (click)="onSelect(event)">
-    
-    <span class="badge">{{event.id}}</span> {{event.name}}
+     {{event.title}}
   </li>
 </ul>
  
 <div *ngIf="selectedEvent">
  
-  <h2>{{ selectedEvent.name | uppercase }} Details</h2>
+  <h2>{{ selectedEvent.title | uppercase }} Details</h2>
   <div><span>id: </span>{{selectedEvent.id}}</div>
   <div>
     <label>name:
-      <input [(ngModel)]="selectedEvent.name" placeholder="name">
+      <input [(ngModel)]="selectedEvent.title" placeholder="title">
     </label>
   </div>
  

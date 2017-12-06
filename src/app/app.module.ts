@@ -18,6 +18,10 @@ import {HttpModule} from '@angular/http';
 import { EventscataloglistComponent } from './eventscataloglist/eventscataloglist.component';
 import { EventscatalogtagComponent } from './eventscatalogtag/eventscatalogtag.component';
 import { PostmessagesComponent } from './postmessages/postmessages.component';
+import { QuillModule } from 'ngx-quill';
+
+import { PostmessagestexteditorComponent } from './postmessagestexteditor/postmessagestexteditor.component';
+
 
 
 
@@ -30,6 +34,7 @@ import { PostmessagesComponent } from './postmessages/postmessages.component';
     EventscataloglistComponent,
     EventscatalogtagComponent,
     PostmessagesComponent,
+    PostmessagestexteditorComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +45,7 @@ import { PostmessagesComponent } from './postmessages/postmessages.component';
     MaterialModule,
     ReactiveFormsModule,
     HttpModule,
+    QuillModule,
 
   ],
 
@@ -51,7 +57,7 @@ import { PostmessagesComponent } from './postmessages/postmessages.component';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpModule,
-
+    QuillModule,
 
 
   ],
